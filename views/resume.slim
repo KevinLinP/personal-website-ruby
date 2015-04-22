@@ -1,23 +1,50 @@
-.text-center
+.hidden-print
+  .github-fork-ribbon-wrapper.right
+    .github-fork-ribbon
+      a href="https://github.com/kevinlinp/resume-app" Fork me on GitHub!
+
+header.text-center
   h1 Kevin Lin
-  | kevin.lin.p@gmail.com  
-  br
-  | (703) 672-0317
+  a href='mailto:kevin.lin.p@gmail.com' kevin.lin.p@gmail.com
 
 section
-  h2 Experience
-
-  h3
-    ' Avvo
+  h2
+    a> href='http://en.wikipedia.org/wiki/Avvo' Avvo
     small Seattle, WA
 
-  h3
-    ' Rackspace
-    small Blacksburg, WA
+  p Software Developer, March 2012 – April 2015
+
+  ul
+    li Implemented brand-critical webpages through HTML/Slim, CSS/Sass, and Javascript with jQuery.
+    li Worked on every layer of a complex 8-year-old Rails project comprised of multiple databases and in-house libraries.
+    li Tuned performance through revising data models, optimizing SQL queries, and implementing page fragment caching.
+    li Helped divide a monolithic application into several smaller, focused concerns through the use of service-oriented-architecture API applications.
+    li Touched a large variety of topics including A/B testing, Google Analytics, troubleshooting application servers, browser-specific issues, browser-automation testing, HTML Microdata, Rails framework updates, and JSON RESTful services.
+    li Used a variety of data systems including MySQL, Redis, Memcache, and Solr.
+    li Worked directly with product managers and designers to iterate on the product design.
+    li Shipped dozens of features and fixed hundreds of bugs.
 
 section
-  h2 Education
+  h2
+    a> href='http://en.wikipedia.org/wiki/Rackspace' Rackspace
+    small Blacksburg, VA
+  p
+    Software Developer Intern, Part-Time, January 2009 – May 2010
+  ul
+    li Completed the MS Exchange functions of the Email and Apps REST API and oversaw the product launch.
 
+section
   h3
-    ' Virginia Tech
-    small Bachelor of Science, Computer Science
+    a> href='http://en.wikipedia.org/wiki/Virginia_Tech' Virginia Tech
+    small Blacksburg, VA
+  | Bachelor of Computer Science with a Business Minor
+  p Selected coursework: Technical Writing, Intro to DBMS, Design of Information, Software Engineering
+
+section
+  h3
+    a> href='http://en.wikipedia.org/wiki/Thomas_Jefferson_High_School_for_Science_and_Technology' Thomas Jefferson High School for Science and Technology
+    small Alexandria, VA
+
+.visible-print
+  footer
+    p.text-right = DateTime.now.strftime('%e %B %Y')
