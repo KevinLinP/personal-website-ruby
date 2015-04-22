@@ -1,0 +1,3 @@
+body:not(.serious-print) {
+  font-family: "Comic Sans MS", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}

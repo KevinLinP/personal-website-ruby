@@ -1,7 +1,16 @@
 doctype html
 
 html
+
   head
-    title Résumé of Kevin Lin
+    title Kevin Lin
+    link [href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css"]
+    link [href="fonts/cmun-bright/cmun-bright.css" rel="stylesheet"]
+    meta [name="viewport" content="width=device-width, initial-scale=1"]
+
+    == css :application
+    == css :print, media: 'print'
+
   body
-    == yield
+    .container
+      == yield
