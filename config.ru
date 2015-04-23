@@ -1,4 +1,4 @@
-require './web'
+require './resume_app'
 
 require 'sass/plugin/rack'
 Sass::Plugin.options[:style] = :compressed
