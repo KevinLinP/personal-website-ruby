@@ -1,6 +1,9 @@
 header.text-center
   h1 Kevin Lin
   a href='mailto:kevin.lin.p@gmail.com' kevin.lin.p@gmail.com
+  - if phone_number
+    br
+    a href="tel:#{phone_number}" = phone_number
   br
   | 3-year Ruby on Rails software developer
 
