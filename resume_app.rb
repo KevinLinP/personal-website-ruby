@@ -2,8 +2,6 @@ require 'sinatra'
 require 'slim'
 
 # TODO: rewrite Avvo section
-# TODO: optimize print layout
-# TODO: Google Analytics
 # TODO: Optimizely?
 
 RESUME_LAST_UPDATED = DateTime.new
