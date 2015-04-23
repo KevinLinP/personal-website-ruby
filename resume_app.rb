@@ -1,6 +1,5 @@
 require 'sinatra'
 require 'slim'
-require 'rugged'
 
 # TODO: rewrite Avvo section
 # TODO: optimize print layout
