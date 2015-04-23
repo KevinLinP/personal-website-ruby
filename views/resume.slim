@@ -1,3 +1,6 @@
+ruby:
+  RESUME_LAST_UPDATED = DateTime.new(2015, 4, 22)
+
 header.text-center
   h1 Kevin Lin
   a href='mailto:kevin.lin.p@gmail.com' kevin.lin.p@gmail.com
@@ -47,7 +50,7 @@ section
 
 .visible-print
   footer
-    p.text-right = last_updated.strftime('%e %B %Y')
+    p.text-right = RESUME_LAST_UPDATED.strftime('%e %B %Y')
 
 .hidden-print
   .github-fork-ribbon-wrapper.right-bottom
