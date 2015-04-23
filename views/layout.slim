@@ -12,6 +12,6 @@ html
     link href="fonts/cmun-bright/cmun-bright.css" rel="stylesheet"
     link rel="stylesheet" href="stylesheets/layout.css"
 
-  body
+  body class=('why-so-serious' if serious_print)
     .container
       == yield
