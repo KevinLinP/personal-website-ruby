@@ -4,8 +4,6 @@ require 'slim'
 # TODO: rewrite Avvo section
 # TODO: Optimizely?
 
-RESUME_LAST_UPDATED = DateTime.new
-
 get '/' do
   local_vars = {
     serious_print: !!params[:srs],

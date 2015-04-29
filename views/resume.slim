@@ -1,5 +1,5 @@
 ruby:
-  RESUME_LAST_UPDATED = DateTime.new(2015, 4, 22)
+  RESUME_LAST_UPDATED = DateTime.new(2015, 4, 29)
 
 header.text-center
   h1 Kevin Lin
@@ -18,14 +18,15 @@ section
   p Software Developer, March 2012 – April 2015
 
   ul
-    li Implemented brand-critical webpages through HTML/Slim, CSS/Sass, and Javascript with jQuery.
+    li Implemented brand-critical webpages through working with product managers and designers.
     li Worked on every layer of a complex 8-year-old Rails project comprised of multiple databases and in-house libraries.
-    li Tuned performance through revising data models, optimizing SQL queries, and implementing page fragment caching.
+    li Optimized server response performance through revising data models, optimizing SQL queries, and implementing page fragment caching.
     li Helped divide a monolithic application into several smaller, focused concerns through the use of service-oriented-architecture API applications.
-    li Touched a large variety of topics including A/B testing, Google Analytics, troubleshooting application servers, browser-specific issues, browser-automation testing, HTML Microdata, Rails framework updates, and JSON RESTful services.
-    li Used a variety of data systems including MySQL, Redis, Memcache, and Solr.
-    li Worked directly with product managers and designers to iterate on the product design.
+    li Touched a large variety of topics including analytics, server monitoring, cross-browser issues, browser-automation testing, HTML Microdata, Rails framework updates, and JSON RESTful services.
     li Shipped dozens of features and fixed hundreds of bugs.
+
+  p Selected tools: Ruby, Ruby on Rails, TDD, MiniTest, Capybara, Capistrano, HTML, Slim, CSS, Sass, Javascript, jQuery, Optimizely, HTML Microdata, MySQL, Redis, Memcache, Solr, New Relic, Honeybadger.io, Twilio, ExactTarget, Amazon EC2, Amazon Cloudfront
+
 
 section
   h2
@@ -50,8 +51,9 @@ section
 
 .visible-print
   footer
-    div style="margin-top: 16rem; margin-bottom: 10rem;"
-      img src='http://i.imgur.com/R5L7RLy.jpg?1' width=683 height=512 class="center-block"
+    - unless serious_print
+      div style="margin-top: 16rem; margin-bottom: 10rem;"
+        img src='http://i.imgur.com/R5L7RLy.jpg?1' width=683 height=512 class="center-block"
     p.text-right = RESUME_LAST_UPDATED.strftime('%e %B %Y')
 
 .hidden-print
