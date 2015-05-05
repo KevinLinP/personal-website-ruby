@@ -4,9 +4,19 @@ ruby:
 header.text-center
   h1 Kevin Lin
   a href='mailto:kevin.lin.p@gmail.com' kevin.lin.p@gmail.com
-  - if phone_number
+  - if show_phone_number
     br
+    ' Mobile:
     a href="tel:#{phone_number}" = phone_number
+    br
+    ' FaceTime: 
+    a href="facetime:#{phone_number}" = phone_number
+    br
+    ' Skype: 
+    a href="skype:kevin.lin.p" kevin.lin.p
+    br
+    ' Google Hangouts: 
+    a href="https://plus.google.com/+KevinLinP" KevinLinP
   br
   | 3-Year Ruby on Rails Software Developer
 
