@@ -1,5 +1,5 @@
 ### resume-app
 
-Currently running on http://www.kevinlinp.org
+Currently accessible via http://www.kevinlinp.org.
 
-Hi recruiters, managers, and potential future coworkers! I am currently available for part-time work in Seattle, and remotely. I am also willing to move to the SF Bay Area if such an opportunity presents itself. Shoot me a quick email with a work description!
+Hi recruiters, managers, and potential future coworkers! I am currently looking for for contract and part-time work in Seattle, San Francisco, and remotely. Shoot me a quick email with a work description!
