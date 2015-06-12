@@ -1,5 +1,5 @@
 ruby:
-  RESUME_LAST_UPDATED = DateTime.new(2015, 5, 6)
+  RESUME_LAST_UPDATED = DateTime.new(2015, 6, 12)
 
 header.text-center
   h1 Kevin Lin
@@ -17,53 +17,16 @@ header.text-center
     br
     ' Google Hangouts: 
     a href="https://plus.google.com/+KevinLinP" target="_blank" plus.google.com/+KevinLinP
-  br
-  | 3-Year Full-Stack Ruby on Rails Software Developer
 
-section
-  h2
-    a> href='http://en.wikipedia.org/wiki/Avvo' Avvo
-    small Seattle, WA
+section.major
+  h2 Summary
+  p A Ruby on Rails full stack software developer with 3 years of Rails experience seeks part-time, contract, and full-time opportunities.
 
-  p Software Developer, March 2012 – April 2015
+section.major
+  == slim :'resume/skills'
 
-  ul
-    li Implemented brand-critical webpages through working with designers and product managers.
-    li Worked on every layer of a complex 8-year-old Rails project comprised of multiple databases and in-house libraries.
-    li Optimized server response performance through revising data models, optimizing SQL queries, and implementing fragment caching.
-    li Helped divide a monolithic application into several smaller, focused concerns through the use of service-oriented-architecture API applications.
-    li Touched a large variety of topics including analytics, server monitoring, cross-browser issues, browser-automation testing, HTML Microdata, Rails framework updates, and JSON RESTful services.
-    li Shipped dozens of features and fixed hundreds of bugs.
+section.major
+  == slim :'resume/experience'
 
-  p Selected tools: Ruby, Ruby on Rails, TDD, MiniTest, Capybara, Resque, HTML/Slim, CSS/Sass, JavaScript, jQuery, Optimizely, HTML Microdata, MySQL, Redis, Memcache, Solr, Capistrano, New Relic, Honeybadger.io, Twilio, ExactTarget, Amazon EC2, Amazon Cloudfront
-
-
-section
-  h2
-    a> href='http://en.wikipedia.org/wiki/Rackspace' Rackspace
-    small Blacksburg, VA
-  p
-    | Software Developer Intern, Part-Time, January 2009 – May 2010
-  ul
-    li Completed the MS Exchange functions of the Email and Apps REST API and oversaw the product launch.
-
-section
-  h3
-    a> href='http://en.wikipedia.org/wiki/Virginia_Tech' Virginia Tech
-    small Blacksburg, VA
-  | B.S Computer Science with Business Minor
-  p Selected coursework: Technical Writing, Intro to DBMS, Design of Information, Software Engineering
-
-section
-  h3
-    a> href='http://en.wikipedia.org/wiki/Thomas_Jefferson_High_School_for_Science_and_Technology' Thomas Jefferson High School for Science and Technology
-    small Alexandria, VA
-
-.visible-print
-  footer
-    p.text-right = RESUME_LAST_UPDATED.strftime('%e %B %Y')
-
-.hidden-print
-  .github-fork-ribbon-wrapper.right-bottom
-    .github-fork-ribbon
-      a href="https://github.com/kevinlinp/resume-app" Fork me on GitHub!
+section.major
+  == slim :'resume/education'
