@@ -1,4 +1,4 @@
-require './resume_app'
+require './personal_website'
 
 require 'sass/plugin/rack'
 Sass::Plugin.options[:style] = :compressed
