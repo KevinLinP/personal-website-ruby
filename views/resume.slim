@@ -2,51 +2,52 @@ ruby:
   @page_title = 'Resume'
   RESUME_LAST_UPDATED = DateTime.new(2015, 7, 17)
 
-header.text-center
-  h1 Kevin Lin
-  a href='mailto:kevin.lin.p@gmail.com' kevin.lin.p@gmail.com
-  - if show_phone_number
-    br
-    ' Mobile:
-    a href="tel:#{phone_number}" = phone_number
-    br
-    ' FaceTime: 
-    a href="facetime:#{phone_number}" = phone_number
-    br
-    ' Skype: 
-    a href="skype:kevin.lin.p" kevin.lin.p
-    br
-    ' Google Hangouts: 
-    a href="https://plus.google.com/+KevinLinP" target="_blank" plus.google.com/+KevinLinP
+.container
+  header.text-center
+    h1 Kevin Lin
+    a href='mailto:kevin.lin.p@gmail.com' kevin.lin.p@gmail.com
+    - if show_phone_number
+      br
+      ' Mobile:
+      a href="tel:#{phone_number}" = phone_number
+      br
+      ' FaceTime: 
+      a href="facetime:#{phone_number}" = phone_number
+      br
+      ' Skype: 
+      a href="skype:kevin.lin.p" kevin.lin.p
+      br
+      ' Google Hangouts: 
+      a href="https://plus.google.com/+KevinLinP" target="_blank" plus.google.com/+KevinLinP
 
-section
-  h2 
-    ' Summary
-    small.hidden-print
-      a.text-muted[href='http://k-lin-status-updates.us11.list-manage.com/subscribe?u=c1c5b953aec3901bd44555155&id=038193d322' target='_blank']
-        ' Sign up for status updates 
-        i.fa.fa-external-link
+  section
+    h2 
+      ' Summary
+      small.hidden-print
+        a.text-muted[href='http://k-lin-status-updates.us11.list-manage.com/subscribe?u=c1c5b953aec3901bd44555155&id=038193d322' target='_blank']
+          ' Sign up for status updates 
+          i.fa.fa-external-link
 
-  p A 3-year Ruby on Rails full-stack software developer who is currently unavailable for part-time contract opportunities, but is open to consulting engagements.
+    p A 3-year Ruby on Rails full-stack software developer who is currently unavailable for part-time contract opportunities, but is open to consulting engagements.
 
-  small.visible-print Sign up for status updates at http://bit.ly/klsu317.
+    small.visible-print Sign up for status updates at http://bit.ly/klsu317.
 
-section
-  == slim :'resume/skills'
+  section
+    == slim :'resume/skills'
 
-section
-  == slim :'resume/experience'
+  section
+    == slim :'resume/experience'
 
-section
-  == slim :'resume/education'
+  section
+    == slim :'resume/education'
 
-.visible-print
-  footer
-    .row
-      .col-md-6.text-muted Printed from kevinlinp.org
-      .col-md-6.text-right.text-muted = RESUME_LAST_UPDATED.strftime('%B %e, %Y')
+  .visible-print
+    footer
+      .row
+        .col-md-6.text-muted Printed from kevinlinp.org
+        .col-md-6.text-right.text-muted = RESUME_LAST_UPDATED.strftime('%B %e, %Y')
 
-.hidden-print
-  .github-fork-ribbon-wrapper.right-bottom
-    .github-fork-ribbon
-      a href="https://github.com/kevinlinp/resume-app" Fork me on GitHub!
+  .hidden-print
+    .github-fork-ribbon-wrapper.right-bottom
+      .github-fork-ribbon
+        a href="https://github.com/kevinlinp/resume-app" Fork me on GitHub!

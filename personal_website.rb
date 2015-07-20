@@ -2,7 +2,7 @@ require 'sinatra'
 require 'slim'
 
 get '/' do
-  redirect to('/resume'), 302
+  slim :about_me, locals: {serious_print: false}
 end
 
 get '/resume' do
