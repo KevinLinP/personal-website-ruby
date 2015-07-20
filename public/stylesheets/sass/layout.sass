@@ -1,78 +1,8 @@
-
-body:not(.resume)
+h1, h2, h3, h4, h5, h6, h7
   font-weight: 300
 
-  h1, h2, h3, h4, h5
-    font-weight: 300
+.circular-image
+  border-radius: 50%
 
-
-// TODO: add transition time to github ribbon hover
-// TODO: fade links to blue on hover?
-body.resume 
-  font-family: "Computer Modern Bright", "Helvetica Neue", Helvetica, Arial, sans-serif
-
-  .container
-    margin-top: 4rem
-    margin-bottom: 12rem
-
-  section
-    margin-bottom: 4rem
-
-  h1 
-    font-size: 2em
-
-  h2 
-    font-size: 1.7em
-
-  h3 
-    font-size: 1.3em
-
-  a 
-    color: #000
-
-  footer
-    margin-top: 10rem
-    padding-right: 1rem
-
-  .github-fork-ribbon 
-    opacity: 0.3
-    background-color: #CCC
-
-    &:hover 
-      opacity: 1
-      background-color: #FF7F00
-    
-  @media print 
-    &:not(.why-so-serious) 
-      font-family: "Comic Sans MS", "Helvetica Neue", Helvetica, Arial, sans-serif
-      font-size: 150%
-    
-    // overriding Bootstrap's print links
-    a[href]:after 
-      content: none
-
-// http://keithclark.co.uk/articles/pure-css-parallax-websites/
-.parallax 
-  -webkit-perspective: 1px
-  perspective: 1px
-  height: 100vh
-  overflow-x: hidden
-  overflow-y: auto
-
-.parallax-layer
-  position: absolute
-  top: 0
-  right: 0
-  bottom: 0
-  left: 0
-
-.parallax-foreground
-  @extend .parallax-layer
-  -webkit-transform: translateZ(0px)
-  transform: translateZ(0px)
-
-.parallax-background 
-  @extend .parallax-layer
-  -webkit-transform: translateZ(-1px) scale(2)
-  transform: translateZ(-1px) scale(2)
-
+.white-border
+  border: 3px solid white
