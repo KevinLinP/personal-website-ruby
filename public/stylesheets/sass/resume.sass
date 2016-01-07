@@ -8,17 +8,20 @@ body
   margin-top: 4rem
   margin-bottom: 12rem
 
+header
+  margin-bottom: 3rem
+
 section
-  margin-bottom: 4rem
+  margin-bottom: 2.5rem
 
 h1 
-  font-size: 2em
+  font-size: 2rem
 
 h2 
-  font-size: 1.7em
+  font-size: 1.4rem
 
 h3 
-  font-size: 1.3em
+  font-size: 1.2rem
 
 a 
   color: #000
@@ -36,14 +39,12 @@ footer
     background-color: #FF7F00
   
 @media print 
+  body
+    font-size: 12px
+
   body:not(.why-so-serious) 
     font-family: "Comic Sans MS", "Helvetica Neue", Helvetica, Arial, sans-serif
-    font-size: 150%
   
-  // overriding Bootstrap's print links
-  a[href]:after 
-    content: none
-
 .circular-image
   border-radius: 50%
 

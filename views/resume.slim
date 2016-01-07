@@ -4,7 +4,7 @@ ruby:
   RESUME_LAST_UPDATED = DateTime.new(2016, 1, 6)
 
 .container
-  header.text-center
+  header.text-xs-center
     h1 Kevin Lin
     a href='mailto:kevin.lin.p@gmail.com' kevin.lin.p@gmail.com
     - if show_phone_number
@@ -31,7 +31,7 @@ ruby:
 
     p A 3½-year Ruby on Rails full-stack software developer is seeking part-time contract opportunities.
 
-    small.visible-print Sign up for status updates at http://bit.ly/klsu317.
+    small.visible-print-inline Sign up for status updates at http://bit.ly/klsu317.
 
   section
     == slim :'resume/skills'
@@ -42,11 +42,11 @@ ruby:
   section
     == slim :'resume/education'
 
-  .visible-print
+  .visible-print-block
     footer
       .row
         .col-md-6.text-muted Printed from kevinlinp.org/resume
-        .col-md-6.text-right.text-muted = RESUME_LAST_UPDATED.strftime('%B %e, %Y')
+        .col-md-6.text-xs-right.text-muted = RESUME_LAST_UPDATED.strftime('%B %e, %Y')
 
   .hidden-print
     .github-fork-ribbon-wrapper.right-bottom
