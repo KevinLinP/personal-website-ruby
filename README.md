@@ -1,3 +1,3 @@
 ### My Website
 
-Currently accessible via http://www.kevinlinp.org.
+Deprecated by https://github.com/kevinlinp/personal-website-phoenix.
